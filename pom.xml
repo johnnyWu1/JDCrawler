@@ -108,7 +108,7 @@
               <configuration>  
                 <!-- 指定测试文件路径-->  
                 <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>  
-                <testClassesDirectory>${basedir}/WebRoot/WEB-INF/classes</testClassesDirectory>    
+                <testClassesDirectory>${basedir}/target/test-classes</testClassesDirectory>    
                 <skip>false</skip>  
                 <testFailureIgnore>true</testFailureIgnore>  
                 <!--   
@@ -142,7 +142,7 @@
                                     <fileset dir="${basedir}/target/surefire-reports">  
                                         <include name="**/*.xml" />  
                                     </fileset>  
-                                    <report format="noframes" todir="${basedir}/target/surefire-reports" />  
+                                    <report format="frames" todir="${basedir}/target/surefire-reports" />  
                                 </junitreport>  
                             </tasks>  
                         </configuration>  
